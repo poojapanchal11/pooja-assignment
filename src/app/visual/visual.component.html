@@ -1,0 +1,95 @@
+<div class="container-fluid">
+    <div class="row">
+<h4 class="text mt-4">2.Select Source</h4>
+
+
+
+<div class="card mb-4 mt-2">
+
+  <!--Card image-->
+  <div class="view overlay">
+
+    <a href="#!">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+  <!--Card content-->
+  <div class="card-body">
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+          aria-selected="true">MySQL</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+          aria-selected="false">CSV</a>
+      </li>
+
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <!-- Material input -->
+        <div class="md-form">
+          <i class="fas fa-plus prefix" style="font-size: 15px; top:35%"></i>
+          <input type="text" id="inputIconEx2" class="form-control">
+          <label for="inputIconEx2">information_schema</label>
+        </div>
+        <div class="md-form">
+          <i class="fas fa-minus prefix " style="font-size: 15px; top:35%"></i>
+          <input type="text" id="inputIconEx2" class="form-control">
+          <label for="inputIconEx2">learn</label>
+        </div>
+
+        <!-- Default input -->
+        <label for="inputDisabledEx2" class="disabled"></label>
+        <input type="text" id="inputDisabledEx2" class="form-control sql-input" placeholder="customers">
+        <!-- Default input -->
+        <label for="inputDisabledEx2" class="disabled"></label>
+        <input type="text" id="inputDisabledEx2" class="form-control sql-input" placeholder="orders">
+        <!-- Default checked -->
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="defaultChecked4">
+          <label class="custom-control-label pl-3" for="defaultChecked4">OrderID</label>
+        </div>
+        <!-- Default checked -->
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="defaultChecked5">
+          <label class="custom-control-label pl-3" for="defaultChecked5">CustomerID</label>
+        </div>
+        <!-- Default checked -->
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="defaultChecked6">
+          <label class="custom-control-label pl-3" for="defaultChecked6">EmployeeID</label>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <!-- Default input -->
+        <label for="inputDisabledEx2" class="disabled"></label>
+        <input type="text" id="inputDisabledEx2" class="form-control csv-input" placeholder="C:\fakepath\order.csv">
+        <!-- Default checked -->
+      </div>
+
+   
+    </div>
+    <router-outlet></router-outlet>
+    
+  </div>
+
+</div>
+<div class="col-lg-6">
+ 
+    <app-msql-visual></app-msql-visual>
+     
+   </div>
+   </div>
+   </div>
+
+
+
+
+
+
+
+<!-- Card -->

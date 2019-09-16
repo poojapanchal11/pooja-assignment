@@ -1,0 +1,14 @@
+.sql-input{
+    background-color: #ADADAD;
+}
+.tab-content{
+    height: 405px;
+    overflow-y: scroll;
+}
+.csv-input{
+    background-color: #ADADAD;
+}
+.card{
+    top: 55px;
+    right: 155px;
+}
